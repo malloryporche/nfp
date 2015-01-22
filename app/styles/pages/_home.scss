@@ -63,7 +63,13 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 		i.fa {
 			color: $secondary_color;
 			@include rem(35);;
+			&:hover {
+				color: $primary_color;
+			}
 		}
+	}
+	a:hover {
+		color: $primary_color;
 	}
 }
 form.navbar-form {
