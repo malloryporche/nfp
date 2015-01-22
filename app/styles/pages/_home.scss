@@ -1,0 +1,25 @@
+
+/*	NAVIGATION */
+
+button#nfp_navbar-btn .icon-bar {
+	background-color: $primary_color;
+}
+#nfp_navbar-row-1 {
+	float: right;
+	text-align: end;
+}
+
+ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_navbar_site-nav li {
+	display: inline-block;
+	vertical-align: middle;
+}
+#nfp_navbar-soc-links {
+	margin: 15px auto;
+	padding-right: 15px;
+	li {
+		padding-right: 15px;
+		i.fa {
+			@include rem(35);;
+		}
+	}
+}

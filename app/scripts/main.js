@@ -1,6 +1,5 @@
-/**
- * The nav stuff
- */
+/* PUSH MENU NAVIGATION */
+
 (function( window ){
 	
 	'use strict';
@@ -34,6 +33,4 @@
 			document.body.removeChild(mask);
 		} );
 	});
-
-
 })( window );

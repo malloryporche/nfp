@@ -16,6 +16,9 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -27,45 +30,267 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="nfp_navbar" id="nfp_navbar-btn">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="www.avon39.org" class="navbar-brand" id="nfp_logo">
+                    <img src="img/avon-walk-logo--small.png" alt="Avon Walk39 Logo">
+                </a>
+            </div>
+            <div class="row">
+                <nav class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" id="nfp_navbar-row-1">
+                    <ul id="nfp_navbar-soc-links">
+                        <li>
+                            <a href="www.facebook.com/avon39">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.twitter.com/avon39walk">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.youtube.com/user/avonwalkonline">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#">Login</a>
+                    <form class="navbar-form navbar-right" role="search">
+                        <input type="text" class="form-control" placeholder="Search">
+                            <i class="fa fa-search"></i>
+                    </form>
+                </nav><!--End nfp_navbar_row-1-->
+                <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="nfp_navbar-row-2">
+                    <ul class="pull-right" id="nfp_navbar_site-nav">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="nfp_navbar-events-dd" href="#" role-"button" aria-expanded="false">
+                                Events <span class="caret"></span>
+                            </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Houston</a></li>
+                                    <li><a href="#">Washington DC</a></li>
+                                    <li><a href="#">Boston</a></li>
+                                    <li><a href="#">Chicago</a></li>
+                                    <li><a href="#">San Francisco</a></li>
+                                    <li><a href="#">Santa Barbara</a></li>
+                                    <li><a href="#">New York</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                           <a class="dropdown-toggle" data-toggle="nfp_navbar-prepared-dd" href="#" role-"button" aria-expanded="false">
+                                Get Prepared <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Fundraising</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <button type="button" class="btn btn-default navbar-btn">
+                            <a href="#">Donate</a>
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn">
+                            <a href="#">Request Info</a>
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn">
+                            <a href="#">Register</a>
+                        </button>
+                    </ul>
+                </nav>
+            </div>
+        </div>  <!--End Navigation-container-fluid-->
+    </nav>
     
-    <div class="container">
-        <div class="header">
-            <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <h3 class="text-muted">nfp</h3>
-        </div>
+    <!--Site banner with Carousel -->
+    <header id="nfp_site_banner" class="container-fluid">
+        <section class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 carousel slide carousel-fade"  id="nfp_site_banner">
+            <!--nfp_site_banner-carousel items and inner wrapper-->
+                <div class="carousel-inner">
+                    <div class="active item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </section>
+    </header>
 
-        <div class="jumbotron">
-            <h1>Hello!</h1>
-            <p class="lead">Your app is ready.</p>
-            <p><a class="btn btn-lg btn-success" href="#">Great!</a></p>
+    <!--nfp_banner_slogan-->
+    <section id="nfp_banner_slogan-container" class="row">
+        <div class="col-sm-12 col-md-12 col-xl-12" id="nfp_banner_slogan-text">
+            <h1>All you've got is all it takes. <span>Register today.</span></h1>
         </div>
+    </section>
 
-        <div class="row marketing">
-            <div class="col-lg-6">
-                <h4>HTML5 Boilerplate</h4>
-                <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-                
-                <h4>Sass</h4>
-                <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-                
-                <h4>Bootstrap</h4>
-                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-                <h4>Modernizr</h4>
-                <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-                
+    <!--nfp_learn-more video-widget & text-box -->
+    <section id="nfp_learn-more" class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="nfp_learn-more_video-placeholder">
+            <img src="img/video-placeholder.jpg" alt="">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="nfp_learn-more_text-box">
+            <h1><span>Avon 39</span> is the walk to end breast cancer</h1>
+            <hr>
+            <h3>Avon 39 is a challenge.  AVON 30 is a weekend like you've never had before.  On the road to 39, no matter how far you walk, you'll crush fear, doubt and breast cancer --one persistent step and donation at a tiem.</h3>
+            <button class="button">Learn more</button>
+        </div>
+    </section>
+
+    <section id="nfp_site_title" class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="nfp_events_img-title">
+            <img src="img/2015_events_text.jpg" alt="2015 Events Image Text">
+        </div>
+    </section>
+
+    <section class="row" id="nfp_events_info-links">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6" id="nfp_events-info-TX">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>Houston</h2>
+                <h4>Apr 25-26, 2015</h4>
+                <button class="button">
+                    <a href="#">Details</a>
+                </button>
             </div>
         </div>
-
-        <div class="footer">
-            <p>Slush - The streaming scaffolding system.</p>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>Washington DC</h2>
+                <h4>May 2-3, 2015</h4>
+                <button class="button"><a href="#">Details</a></button>
+            </div>
         </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>Boston</h2>
+                <h4>May 16-17, 2015</h4>
+                <button class="button"><a href="#">Details</a></button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>Chicago</h2>
+                <h4>Jun 6-7, 2015</h4>
+                <button class="button"><a href="#">Details</a></button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>San Francisco</h2>
+                <h4>Jul 11-12, 2015</h4>
+                <button class="button"><a href="#">Details</a></button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>Santa Barbara</h2>
+                <h4>Sep 12-13, 2015</h4>
+                <button class="button"><a href="#">Details</a></button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div class="nfp_events-overlay">
+                <h3>Avon 39</h3>
+                <h2>New York</h2>
+                <h4>Oct 17-18, 2015</h4>
+                <button class="button"><a href="#">Details</a></button>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    
+    <section class="row" id="nfp_widgets">
+        <h2>You have the power</h2>
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <h1 class="nfp_widget_number">1</h1>
+            <h5 class="nfp_widget-title">Register</h5>
+            <p>This is your moment to crush it.  You've got the power.  Now all it takes is guts.</p>
+            <button class="button"><a href="#">Get Started</a></button>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <h1 class="nfp_widget_number">2</h1>
+            <h5 class="nfp_widget-title">Get Ready</h5>
+            <p>Prep to step. We’ll help you go big when it comes to training and fundraising. Our staff will make you reach both finish lines. You just need to bring it!</p>
+            <button class="button"><a href="#">Learn More</a></button>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <h1 class="nfp_widget_number">3</h1>
+            <h5 class="nfp_widget-title">Walk</h5>
+            <p>Walking 39 miles is tough. But you’re tougher. No matter how many miles you walk, you’re taking one giant step to end breast cancer.</p>
+            <button class="button"><a href="#">Let's Go</a></button>
+        </div>
+    </section>
+
+    <footer class="row">
+        <div class="col-sm-12 col-md-12 col-lg-2 nfp_ftr_links">
+            <h6>Home</h6>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </div>
+       <div class="col-sm-12 col-md-12 col-lg-2 nfp_ftr_links">
+            <h6>Event</h6>
+            <ul>
+                <li>
+                    <a href="#">Houston</a>
+                    <a href="#">Washington DC</a>
+                    <a href="#">Boston</a>
+                    <a href="#">Chicago</a>
+                    <a href="#">San Francisco</a>
+                    <a href="#">Santa Barbara</a>
+                    <a href="#">New York</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-2 nfp_ftr_links">
+            <h6>Get Prepared</h6>
+            <ul>
+                <li>
+                    <a href="#">Training</a>
+                    <a href="#">Fundraising</a>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-2 nfp_ftr_links">
+            <h6>Participant Center</h6>
+            <ul>
+                <li>
+                    <a href="#">Log In</a>
+                    <a href="#">Forgot Password</a>
+                </li>
+            </ul>
+        </div>
+            <h6>Contact Us</h6>
+            <ul>
+                <li>
+                    <a href="#">Press &amp News</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Statement</a>
+                    <a href="www.facebook.com/avon39"><i class="fa fa-facebook"></i></a>
+                    <a href="www.twitter.com/avon39walk"><i class="fa fa-twitter"></i></a>
+                    <a href="www.facebook.com/user/avonwalkonline"><i class="fa fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
