@@ -3,9 +3,16 @@
 .navbar {
 	height: 60px;
 }
-.navbar-default {
-	background-color: white;
+nav.navbar-default {
+	background-color: $gray_background_color;
 	border-color: transparent;
+	.navbar-toggle {
+		border-color: transparent;
+		font-weight: 700;
+		&:focus {
+			background-color: transparent;
+		}
+	}
 }
 .navbar-brand {
 
@@ -34,7 +41,7 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 	vertical-align: middle;
 }
 #nfp_navbar-soc-links {
-	margin: 15px auto;
+	margin: 15px auto 5px;
 	padding-right: 15px;
 	li {
 		padding-right: 15px;
@@ -97,7 +104,12 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 		margin: 20px auto;
 		width: 90%;
 		padding: 15px 0;
-		border-radius: 30px;
+		border-radius: 40px;
+		-webkit-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+		-moz-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+		-ms-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+		-o-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+		box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
 		a {
 			color: white;
 			@include rem(20);;
@@ -105,12 +117,17 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 	}
 	button.btn.btn-default.navbar-btn {
 	display: inline-block;
-	margin: 20px 10px 10px 0;
+	margin: 25px 1%;
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 40px;
 	border: 2px solid $primary_color;
-	padding: 10px 30px;
+	padding: 15px 10px;
 	width: 45%;
+	-webkit-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+	-moz-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+	-ms-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+	-o-box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
+	box-shadow: 0 2px 4px rgba(58, 58, 58, .4);
 	@include rem(20);;
 	&:first-of-type {
 		margin-left: 15px;
