@@ -5015,7 +5015,16 @@ div#nfp_navbar.navbar-collapse {
   position: relative;
   z-index: 10; }
 
-#nfp_navbar-row-1, #nfp_navbar-row-3 {
+@media screen and (min-width: 1000px) {
+  #nfp_logo img {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    margin: 0;
+    height: 66px;
+    width: 200px; } }
+
+#nfp_navbar-row-1 {
   float: right;
   text-align: end; }
 
@@ -5024,12 +5033,36 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
   vertical-align: middle; }
 
 #nfp_navbar-soc-links {
-  margin: 15px auto 5px;
-  padding-right: 15px; }
+  margin: 15px auto 5px; }
   #nfp_navbar-soc-links li {
     padding-right: 15px; }
+    #nfp_navbar-soc-links li:last-of-type {
+      padding-right: 7px;
+      margin-right: 0px;
+      text-align: right; }
+      #nfp_navbar-soc-links li:last-of-type a {
+        font-size: 1.17647rem;
+        color: #ff377e; }
     #nfp_navbar-soc-links li i.fa {
+      color: #8c8c8c;
       font-size: 2.05882rem; }
+
+form.navbar-form {
+  padding-left: 5px; }
+
+input.form-control {
+  border-radius: 40px;
+  color: #eaeaea;
+  font-weight: 300;
+  padding: 0px 10px;
+  font-size: 0.94118rem;
+  letter-spacing: 0.1em; }
+
+i.fa.fa-search {
+  position: absolute;
+  top: 16px;
+  right: 40px;
+  color: darkgray; }
 
 /* FOR PHONES & TABLETS */
 @media screen and (max-width: 999px) {
