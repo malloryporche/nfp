@@ -1,10 +1,30 @@
 
 /*	NAVIGATION */
-
-button#nfp_navbar-btn .icon-bar {
-	background-color: $primary_color;
+.navbar {
+	height: 60px;
 }
-#nfp_navbar-row-1 {
+.navbar-default {
+	background-color: white;
+	border-color: transparent;
+}
+.navbar-brand {
+
+}
+div#nfp_navbar.navbar-collapse {
+	background-color: $gray_background_color;
+	padding: 0;
+}
+#nfp_logo {
+
+	img {
+		margin: 10px;
+		width: 120px;
+		height: 38px;
+		position: relative;
+		z-index: 10;
+	}
+}
+#nfp_navbar-row-1, #nfp_navbar-row-3 {
 	float: right;
 	text-align: end;
 }
@@ -21,5 +41,106 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 		i.fa {
 			@include rem(35);;
 		}
+	}
+}
+
+/* FOR PHONES & TABLETS */
+@media screen and (max-width: 768px) {
+	#nfp_navbar {
+		border-bottom: 1px solid $gray_border_color;
+	}
+	#nfp_navbar-row-1 {
+		display: none;
+	}
+	#nfp_navbar-row-2 ul li a {
+		margin: 0 auto;
+		display: block;
+		border-bottom: 1px solid $gray_border_color;
+		padding: 20px 0;
+		width: 100%;
+	}
+	#nfp_navbar-row-3 {
+		background-color: darken($gray_background_color, 5%);
+		padding: 0;
+		ul#nfp_navbar-soc-links {
+			float: center;
+			width: 100%;
+			li:last-of-type {
+				padding: 0 40px 0 20px;
+				display: inline-block;
+				a {
+					color: $primary_color;
+					&:hover {
+						color: $secondary_color;
+					}
+				}
+			}
+		}
+		div.nfp_navbar-soc-links-wrap {
+			padding: 20px;
+			border-radius: 50%;
+			background-color: $primary_color;
+			i {
+				color: white;
+			}
+		}
+	}
+	ul #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_navbar_site-nav li {
+	display: block;
+	}
+	
+	button#nfp_navbar-btn .icon-bar, button#nfp_navbar_btn-register {
+	background-color: $primary_color;
+	}
+	button#nfp_navbar_btn-register {
+		display: block;
+		margin: 20px auto;
+		width: 90%;
+		padding: 15px 0;
+		border-radius: 30px;
+		a {
+			color: white;
+			@include rem(20);;
+		}
+	}
+	button.btn.btn-default.navbar-btn {
+	display: inline-block;
+	margin: 20px 10px 10px 0;
+	background-color: white;
+	border-radius: 20px;
+	border: 2px solid $primary_color;
+	padding: 10px 30px;
+	width: 45%;
+	@include rem(20);;
+	&:first-of-type {
+		margin-left: 15px;
+		}
+	a {
+		color: $primary_color;
+		}
+	}
+	form.navbar-form {
+		margin: 20px;
+	}
+	input.form-control {
+		padding: 30px 20px;
+		border-radius: 65px;
+		letter-spacing: 0.05em;
+		font-weight: 300;
+	}
+	i.fa.fa-search {
+		font-weight: 300;
+		position: absolute;
+		@include rem(20);;
+		bottom: 55px;
+		right: 65px;
+		color: darkgray;
+	}
+} /* END MEDIA QUERY */
+
+/* FOR DESKTOPS */
+@media screen and (min-width: 768px) {
+	#nfp_navbar-row-3 {
+		display: none;
 	}
 }

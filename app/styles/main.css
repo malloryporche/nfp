@@ -45,6 +45,7 @@ table {
 
 /*  2) DEFINE VARIABLES & MIXINS  */
 /* PINK */
+/* SOCIAL MEDIA LINKS */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4975,18 +4976,41 @@ html {
 .section-module {
   font-size: 0.85rem; }
 
-a {
+nav a {
+  text-align: center;
+  text-transform: uppercase;
   color: black;
-  text-decoration: none; }
-  a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.1em; }
+  nav a:hover {
+    color: #ff377e;
     text-decoration: none; }
+  nav a:visited {
+    text-decoration: none;
+    color: black; }
 
 /*  4) HOME & NAVIGATION  */
 /*	NAVIGATION */
-button#nfp_navbar-btn .icon-bar {
-  background-color: #ff377e; }
+.navbar {
+  height: 60px; }
 
-#nfp_navbar-row-1 {
+.navbar-default {
+  background-color: white;
+  border-color: transparent; }
+
+div#nfp_navbar.navbar-collapse {
+  background-color: #eaeaea;
+  padding: 0; }
+
+#nfp_logo img {
+  margin: 10px;
+  width: 120px;
+  height: 38px;
+  position: relative;
+  z-index: 10; }
+
+#nfp_navbar-row-1, #nfp_navbar-row-3 {
   float: right;
   text-align: end; }
 
@@ -5001,6 +5025,84 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
     padding-right: 15px; }
     #nfp_navbar-soc-links li i.fa {
       font-size: 2.05882rem; }
+
+/* FOR PHONES & TABLETS */
+@media screen and (max-width: 768px) {
+  #nfp_navbar {
+    border-bottom: 1px solid #dadada; }
+  #nfp_navbar-row-1 {
+    display: none; }
+  #nfp_navbar-row-2 ul li a {
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid #dadada;
+    padding: 20px 0;
+    width: 100%; }
+  #nfp_navbar-row-3 {
+    background-color: #dddddd;
+    padding: 0; }
+    #nfp_navbar-row-3 ul#nfp_navbar-soc-links {
+      float: center;
+      width: 100%; }
+      #nfp_navbar-row-3 ul#nfp_navbar-soc-links li:last-of-type {
+        padding: 0 40px 0 20px;
+        display: inline-block; }
+        #nfp_navbar-row-3 ul#nfp_navbar-soc-links li:last-of-type a {
+          color: #ff377e; }
+          #nfp_navbar-row-3 ul#nfp_navbar-soc-links li:last-of-type a:hover {
+            color: #8c8c8c; }
+    #nfp_navbar-row-3 div.nfp_navbar-soc-links-wrap {
+      padding: 20px;
+      border-radius: 50%;
+      background-color: #ff377e; }
+      #nfp_navbar-row-3 div.nfp_navbar-soc-links-wrap i {
+        color: white; }
+  ul #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_navbar_site-nav li {
+    display: block; }
+  button#nfp_navbar-btn .icon-bar, button#nfp_navbar_btn-register {
+    background-color: #ff377e; }
+  button#nfp_navbar_btn-register {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 30px; }
+    button#nfp_navbar_btn-register a {
+      color: white;
+      font-size: 1.17647rem; }
+  button.btn.btn-default.navbar-btn {
+    display: inline-block;
+    margin: 20px 10px 10px 0;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #ff377e;
+    padding: 10px 30px;
+    width: 45%;
+    font-size: 1.17647rem; }
+    button.btn.btn-default.navbar-btn:first-of-type {
+      margin-left: 15px; }
+    button.btn.btn-default.navbar-btn a {
+      color: #ff377e; }
+  form.navbar-form {
+    margin: 20px; }
+  input.form-control {
+    padding: 30px 20px;
+    border-radius: 65px;
+    letter-spacing: 0.05em;
+    font-weight: 300; }
+  i.fa.fa-search {
+    font-weight: 300;
+    position: absolute;
+    font-size: 1.17647rem;
+    bottom: 55px;
+    right: 65px;
+    color: darkgray; } }
+
+/* END MEDIA QUERY */
+/* FOR DESKTOPS */
+@media screen and (min-width: 768px) {
+  #nfp_navbar-row-3 {
+    display: none; } }
 
 /*  5) SECTIONS:  */
 /*  6) SECTIONS  */

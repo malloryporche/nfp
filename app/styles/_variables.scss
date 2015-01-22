@@ -6,11 +6,12 @@
 $primary_color: #ff377e;	/* PINK */
 $gradient_color_one: #CC1AAC;
 $gradient_color_two: #FF4c70;
-$secondary_color: #FA6746;
-$accent_orange: #FF512F;
+$secondary_color: #8c8c8c;	/* SOCIAL MEDIA LINKS */
+$gray_background_color: #eaeaea;
+$gray_border_color: #dadada;
 $white_text: #fff;
 $primary_color_highlight: darken(#313139, 10%);
-
+$secondary_color_lighten: lighten($secondary_color, 40%);
 
 //	TYPOGRAPHY VARIABLES //
 $base_html_font_size: 17px;

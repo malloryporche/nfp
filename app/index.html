@@ -30,85 +30,123 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav class="navbar" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="nfp_navbar" id="nfp_navbar-btn">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nfp_navbar" id="nfp_navbar-btn">
                     <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="www.avon39.org" class="navbar-brand" id="nfp_logo">
+                <a href="www.avon39.org" id="nfp_logo">
                     <img src="img/avon-walk-logo--small.png" alt="Avon Walk39 Logo">
                 </a>
-            </div>
-            <div class="row">
-                <nav class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" id="nfp_navbar-row-1">
-                    <ul id="nfp_navbar-soc-links">
-                        <li>
-                            <a href="www.facebook.com/avon39">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="www.twitter.com/avon39walk">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="www.youtube.com/user/avonwalkonline">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="#">Login</a>
-                    <form class="navbar-form navbar-right" role="search">
-                        <input type="text" class="form-control" placeholder="Search">
-                            <i class="fa fa-search"></i>
-                    </form>
-                </nav><!--End nfp_navbar_row-1-->
-                <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="nfp_navbar-row-2">
-                    <ul class="pull-right" id="nfp_navbar_site-nav">
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-toggle" data-toggle="nfp_navbar-events-dd" href="#" role-"button" aria-expanded="false">
-                                Events <span class="caret"></span>
-                            </a>
+            </div>  <!--End Navbar header-->
+            <div class="collapse navbar-collapse" id="nfp_navbar">
+                <nav id="nfp_navbar" class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" id="nfp_navbar-row-1">
+                        <ul id="nfp_navbar-soc-links">
+                            <li>
+                                <a href="www.facebook.com/avon39">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.twitter.com/avon39walk">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.youtube.com/user/avonwalkonline">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#">Login</a>
+                        <form class="navbar-form navbar-right" role="search">
+                            <input type="text" class="form-control" placeholder="Search">
+                                <i class="fa fa-search"></i>
+                        </form>
+                    </div><!--End nfp_navbar_row-1-->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="nfp_navbar-row-2">
+                        <ul id="nfp_navbar_site-nav">
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="nfp_navbar-events-dd" href="#" role-"button" aria-expanded="false">
+                                    Events <span class="caret"></span>
+                                </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Houston</a></li>
+                                        <li><a href="#">Washington DC</a></li>
+                                        <li><a href="#">Boston</a></li>
+                                        <li><a href="#">Chicago</a></li>
+                                        <li><a href="#">San Francisco</a></li>
+                                        <li><a href="#">Santa Barbara</a></li>
+                                        <li><a href="#">New York</a></li>
+                                    </ul>
+                            </li>
+                            <li>
+                               <a class="dropdown-toggle" data-toggle="nfp_navbar-prepared-dd" href="#" role-"button" aria-expanded="false">
+                                    Get Prepared <span class="caret"></span>
+                                </a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Houston</a></li>
-                                    <li><a href="#">Washington DC</a></li>
-                                    <li><a href="#">Boston</a></li>
-                                    <li><a href="#">Chicago</a></li>
-                                    <li><a href="#">San Francisco</a></li>
-                                    <li><a href="#">Santa Barbara</a></li>
-                                    <li><a href="#">New York</a></li>
+                                    <li><a href="#">Training</a></li>
+                                    <li><a href="#">Fundraising</a></li>
+                                    <li><a href="#">FAQ</a></li>
                                 </ul>
-                        </li>
+                            </li>
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <a href="#">Donate</a>
+                            </button>
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <a href="#">Request Info</a>
+                            </button>
+                            <button type="button" class="btn navbar-btn" id="nfp_navbar_btn-register">
+                                <a href="#">Register</a>
+                            </button>
+                        </ul>
+                    </div>
+                </nav> <!--End of content for toggling-->
+                
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="nfp_navbar-row-3">
+                        <ul id="nfp_navbar-soc-links">
+                            <li>
+                                <div class="nfp_navbar-soc-links-wrap">
+                                    <a href="www.facebook.com/avon39">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nfp_navbar-soc-links-wrap">
+                                    <a href="www.twitter.com/avon39walk">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nfp_navbar-soc-links-wrap">
+                                    <a href="www.youtube.com/user/avonwalkonline">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </li>
                         <li>
-                           <a class="dropdown-toggle" data-toggle="nfp_navbar-prepared-dd" href="#" role-"button" aria-expanded="false">
-                                Get Prepared <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Training</a></li>
-                                <li><a href="#">Fundraising</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
+                            <a href="#">Login</a>
                         </li>
-                        <button type="button" class="btn btn-default navbar-btn">
-                            <a href="#">Donate</a>
-                        </button>
-                        <button type="button" class="btn btn-default navbar-btn">
-                            <a href="#">Request Info</a>
-                        </button>
-                        <button type="button" class="btn btn-default navbar-btn">
-                            <a href="#">Register</a>
-                        </button>
-                    </ul>
-                </nav>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <input type="text" class="form-control" placeholder="Search">
+                                <i class="fa fa-search"></i>
+                        </form>
+                    </div><!--End nfp_navbar_row-1-->
+
             </div>
+            
         </div>  <!--End Navigation-container-fluid-->
     </nav>
     
