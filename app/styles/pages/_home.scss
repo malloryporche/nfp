@@ -22,7 +22,6 @@ div#nfp_navbar.navbar-collapse {
 	padding: 0;
 }
 #nfp_logo {
-
 	img {
 		margin: 10px;
 		width: 120px;
@@ -30,6 +29,15 @@ div#nfp_navbar.navbar-collapse {
 		position: relative;
 		z-index: 10;
 	}
+}
+@media screen ony and (min-width: 1000px) {
+		#nfp_logo img {
+			position: absolute;
+			top: 35px;
+			left: 20px;
+			margin: 0;
+			height: 66px;
+		}
 }
 #nfp_navbar-row-1, #nfp_navbar-row-3 {
 	float: right;
@@ -52,7 +60,7 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 }
 
 /* FOR PHONES & TABLETS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
 	#nfp_navbar {
 		border-bottom: 1px solid $gray_border_color;
 	}
@@ -156,8 +164,10 @@ ul#nfp_navbar-soc-links, #nfp_navbar-soc-links li, ul#nfp_navbar_site-nav, #nfp_
 } /* END MEDIA QUERY */
 
 /* FOR DESKTOPS */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
 	#nfp_navbar-row-3 {
 		display: none;
 	}
 }
+
+
